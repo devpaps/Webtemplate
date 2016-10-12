@@ -1,0 +1,242 @@
+@import '_normalize'
+@import '_colors'
+@import '_buttons'
+
+
+
+*
+  box-sizing: border-box
+
+hr
+  border: 0
+  height: 1px
+  background: #eee
+
+body
+  -webkit-font-smoothing: antialiased
+  font-family: 'Noto Sans', sans-serif
+
+.wrapper
+  margin: 0 auto
+  width: 60%
+  position: relative
+
+header
+  margin-top: 37px
+  width: 100%
+  height: 100%
+
+  img
+    float: left
+    display: block
+  &::after
+    content: ''
+    display: block
+    position: relative
+    background-image: linear-gradient(to top, transparent 20%, white 100%)
+    margin-top: -101px
+    height: 101px
+    width: 250px
+
+.text
+  display: inline-block
+  overflow: auto
+h1.head-text
+  margin: 0
+  display: inline
+  padding-left: 10px
+  font-weight: 700
+  color: $grey
+  letter-spacing: 1px
+  font-size: 37px
+  span
+    &:nth-child(1)
+      color: $pink
+    &:nth-child(2)
+      color: $blue
+    &:nth-child(3)
+      color: $orange
+h4, h1
+  padding: 0
+  margin: 0
+h4
+  color: $font-navigation
+  padding-left: 10px
+  position: relative
+  top: -10px
+
+
+
+
+// Navigation
+
+nav.navigation
+  float: right
+  position: relative
+  top: 0px
+  ul
+    list-style: none
+    display: flex
+    padding: 0
+    margin: 0
+    li
+      display: inline
+      border-left: 1px dotted $light-grey
+      padding: 10px
+      a
+        color: $font-navigation
+        text-decoration: none
+        font-weight: 700
+      p
+        display: block
+        margin: 0
+        color: $light-grey
+        font-size: 12px
+        font-weight: normal
+
+
+// Slider & Shit -------------------
+
+.slider
+  position: relative
+
+.black-container
+  margin-top: 90px
+  height: 335px
+  width: 100vw
+  margin-left: calc(-1 * ((100vw - 100%) / 2))
+  background: linear-gradient(to top, rgba(0,0,0, .8) 50%, black 100%)
+
+.slide-container
+  height: 340px
+  width: 60%
+  background: pink
+  position: relative
+  top: 2em
+  margin: auto
+  border-radius: 8px
+  box-shadow: 0px 25px 60px -20px rgba(0,0,0,0.2)
+
+h1.main-image
+  text-align: center
+  margin-top: 2em
+
+.upper-hr
+  border: 0
+  height: 1px
+  background: #eee
+
+// Services -------------------------------
+
+section.services
+  display: flex
+  margin-top: 3em
+  justify-content: space-between
+
+aside
+  display: flex
+  flex-direction: column
+  width: 27%
+  h2
+    margin-bottom: 0
+    color: $header-font
+    + p
+      color: $light-grey
+      margin: 0px 0px 2em 0px
+  .image
+    width: 100%
+    height: 100%
+    img
+      display: block
+      width: 100%
+      border: 7px solid #000
+      box-shadow: 0px 20px 40px -10px rgba(0,0,0, .2)
+      border-radius: 5px
+    + p
+      position: relative
+      top: -2em
+button.btn-grey
+  width: 140px
+  height: 90px
+  &:after
+    content: "\f363"
+    font-family: "Ionicons"
+    font-size: 20px
+    padding-left: 10px
+    vertical-align: top
+
+.middle-hr
+  margin: 3em
+
+
+// Social --------------------------------
+
+.features
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+.social, .contact, .news-updates
+  display: flex
+  flex-direction: column
+  width: 30%
+.social
+  p
+    margin-top: 0
+.social-btn
+  display: flex
+  flex-direction: row
+  .rss
+    &:nth-child(1)
+      padding-left: 0
+      cursor: pointer
+    &::after
+      content: "\f23d"
+      font-size: 3em
+      font-family: "Ionicons"
+      color: #e44e23
+  .facebook
+    &:nth-child(2)
+      padding-left: 2em
+      cursor: pointer
+    &::after
+      content: "\f230"
+      font-size: 3em
+      font-family: "Ionicons"
+      color: #3B5998
+  #linkedin
+    &:nth-child(3)
+      padding-left: 2em
+      cursor: pointer
+    &::after
+      content: "\f238"
+      font-size: 3em
+      font-family: "Ionicons"
+      color: #0177B5
+  #youtube
+    &:nth-child(4)
+      padding-left: 2em
+      cursor: pointer
+    &::after
+      content: "\f24c"
+      font-size: 3em
+      font-family: "Ionicons"
+      color: #E62117
+  #tumbler
+    &:nth-child(5)
+      padding-left: 2em
+      cursor: pointer
+    &::after
+      content: "\f240"
+      font-size: 3em
+      font-family: "Ionicons"
+      color: #36465D
+
+
+input
+  width: 100%
+  margin-bottom: 1em
+  padding: .5em
+  border: 1px solid #bbb
+  border-radius: 3px
+  &:focus
+    background: yellow
