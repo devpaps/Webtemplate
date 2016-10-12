@@ -18,7 +18,8 @@ body
 
 .wrapper
   margin: 0 auto
-  width: 60%
+  width: 1200px
+  max-width: 90%
   position: relative
 
 header
@@ -73,7 +74,7 @@ h4
 nav.navigation
   float: right
   position: relative
-  top: 0px
+  top: 15px
   ul
     list-style: none
     display: flex
@@ -82,7 +83,7 @@ nav.navigation
     li
       display: inline
       border-left: 1px dotted $light-grey
-      padding: 10px
+      padding: 0px 10px
       a
         color: $font-navigation
         text-decoration: none
@@ -185,6 +186,7 @@ button.btn-grey
 .social-btn
   display: flex
   flex-direction: row
+  flex-wrap: wrap
   .rss
     &:nth-child(1)
       padding-left: 0
@@ -232,11 +234,56 @@ button.btn-grey
       cursor: pointer
 
 
-input
+input, textarea
   width: 100%
   margin-bottom: 1em
   padding: .5em
   border: 1px solid #bbb
   border-radius: 3px
   &:focus
-    background: yellow
+    outline: none
+    border-color: orangered
+    box-shadow: 0 0 3px orangered
+
+textarea
+  width: 100%
+  height: 181px
+  resize: vertical
+.news-updates
+  h3
+    margin-bottom: 0px
+.article
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  img
+    width: 50px
+    height: 50px
+    margin-right: .8em
+.last
+  margin-bottom: 2em
+
+.fill
+  background: orange
+  height: 10px
+  margin-top: 25px
+  width: 100vw
+  margin-left: calc(-1 * ((100vw - 100%) / 2))
+footer
+  height: 175px
+  background: #4c4c4c
+  display: flex
+  justify-content: space-around
+  color: $footer-font
+  width: 100vw
+  margin-left: calc(-1 * ((100vw - 100%) / 2))
+  .left, .right
+    width: 330px
+    padding-top: 50px
+
+@media (max-width: 1050px)
+  header
+    nav.navigation
+      width: 100%
+      margin-top: 1em
