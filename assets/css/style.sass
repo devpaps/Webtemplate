@@ -111,7 +111,7 @@ nav.navigation
 .slide-container
   height: 340px
   width: 60%
-  background: pink
+  background: orange
   position: relative
   top: 2em
   margin: auto
@@ -158,13 +158,8 @@ aside
       top: -2em
 button.btn-grey
   width: 140px
-  height: 90px
-  &:after
-    content: "\f363"
-    font-family: "Ionicons"
-    font-size: 20px
-    padding-left: 10px
-    vertical-align: top
+  height: 71px
+
 
 .middle-hr
   margin: 3em
@@ -234,6 +229,8 @@ button.btn-grey
       cursor: pointer
 
 
+//Contact -------------------------------------
+
 input, textarea
   width: 100%
   margin-bottom: 1em
@@ -252,11 +249,13 @@ textarea
 .news-updates
   h3
     margin-bottom: 0px
+  .articles
+    + button.btn-blue
+      background: lightgreen
 .article
   display: flex
   flex-direction: row
   align-items: center
-
   img
     width: 50px
     height: 50px
@@ -281,6 +280,7 @@ footer
   .left, .right
     width: 330px
     padding-top: 50px
+
 
 @media (max-width: 1050px)
   header

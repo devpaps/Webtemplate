@@ -427,6 +427,17 @@ input[type="button"] {
   box-sizing: border-box;
 }
 
+.btn-grey:after,
+input[type="submit"]:after,
+input[type="reset"]:after,
+input[type="button"]:after {
+  content: "\f363";
+  font-family: "Ionicons";
+  font-size: 20px;
+  padding-left: 10px;
+  vertical-align: top;
+}
+
 .btn-grey:hover, .btn-grey:active, .btn-grey:focus,
 input[type="submit"]:hover,
 input[type="submit"]:active,
@@ -463,6 +474,17 @@ input[type="button"] {
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
+}
+
+.btn-blue:after,
+input[type="submit"]:after,
+input[type="reset"]:after,
+input[type="button"]:after {
+  content: "\f363";
+  font-family: "Ionicons";
+  font-size: 20px;
+  padding-left: 10px;
+  vertical-align: top;
 }
 
 .btn-blue:hover, .btn-blue:active, .btn-blue:focus,
@@ -612,7 +634,7 @@ nav.navigation ul li p {
 .slide-container {
   height: 340px;
   width: 60%;
-  background: pink;
+  background: orange;
   position: relative;
   top: 2em;
   margin: auto;
@@ -681,15 +703,7 @@ aside .image + p {
 
 button.btn-grey {
   width: 140px;
-  height: 90px;
-}
-
-button.btn-grey:after {
-  content: "\f363";
-  font-family: "Ionicons";
-  font-size: 20px;
-  padding-left: 10px;
-  vertical-align: top;
+  height: 71px;
 }
 
 .middle-hr {
@@ -816,6 +830,10 @@ textarea {
 
 .news-updates h3 {
   margin-bottom: 0px;
+}
+
+.news-updates .articles + button.btn-blue {
+  background: lightgreen;
 }
 
 .article {
