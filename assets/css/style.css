@@ -648,7 +648,7 @@ aside {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 27%;
+  width: 30%;
 }
 
 aside h2 {
